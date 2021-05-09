@@ -1,4 +1,8 @@
-// bool is_not_prime[1000000000LL+1]; // Uncomment this when you want to use the sieve
+#define MAXSIEVE 1
+// Uncomment the next two lines when you want to use the sieve
+//#undef MAXSIEVE
+//#define MAXSIEVE (1000000000LL+1)
+bool is_not_prime[MAXSIEVE]; 
 vector < long long > sieve(long long N){
 
 	vector < long long > primes;
