@@ -1,6 +1,7 @@
 /*
 For Linux users one can use the units command to convert between mutliple types of units of measurement.
-I just created this program for people who want to get an idea of how one can attack this problem.
+I just created this program for people who want to get an idea of how one can attack this problem of converting between units.
+In this particular example we use time units.
 */
 #include <bits/stdc++.h>
 using namespace std;
