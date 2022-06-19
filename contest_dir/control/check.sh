@@ -8,6 +8,7 @@ if [[ -e "a.out" ]]; then
 			if [[ -s ./outputs/diffres ]]; then
 				# we found a test we are failing
 				printf "FAIL! on test $i check WA dir.\n"
+				rm -rf ./WA/*
 				cp ./outputs/temp.out ./WA/your\_answer.out
 				cp ./outputs/$i.out ./WA/$i.out
 				cp ./tests/$i.in ./WA/$i.in
