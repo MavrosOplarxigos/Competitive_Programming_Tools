@@ -1,4 +1,8 @@
 #!/bin/bash
+
+CTRL_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+cd $CTRL_DIR
+
 # case where we give no arguments
 if [ -z "$1" ]
 then
