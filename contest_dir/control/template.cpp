@@ -12,6 +12,8 @@
 #define ALL(x) x.begin(),x.end()
 #define S(x) ((int)(x.size()))
 #define PB push_back
+#define sum_f1tx(x) ( (x*(x+1)) / 2 )
+#define sum_fxty(x,y) ( ( ( (y-x) + 1 ) * ( x + y ) ) / 2 )
 using namespace std;
 
 void doit(){
