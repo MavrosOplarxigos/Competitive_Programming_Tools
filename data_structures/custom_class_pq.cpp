@@ -7,12 +7,12 @@ public:
     int a,b,c; // b+c
 };
 
-class compclass{
+/*class compclass{
 public:
     bool operator()(const ltclass & left, const ltclass & right){
         return left.b+left.c < right.b+right.c;
     }
-};
+};*/
 
 bool mcomp(const ltclass left, const ltclass right){
     return left.b+left.c < right.b+right.c;
@@ -21,10 +21,9 @@ bool mcomp(const ltclass left, const ltclass right){
 int main(){
 
     srand(time(NULL));
-
-    priority_queue < ltclass, vector < ltclass >, 
-    function < bool(ltclass,ltclass) > > ltpq(mcomp);
-
+   
+    priority_queue < ltclass, vector < ltclass >, function < bool(ltclass,ltclass) > > ltpq(mcomp);
+    
     for(int i=0;i<10;i++){
         ltclass curr;
         curr.a = rand() % 20;
