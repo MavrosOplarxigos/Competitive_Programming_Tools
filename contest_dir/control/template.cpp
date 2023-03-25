@@ -11,6 +11,7 @@
 #define PB push_back
 #define sum_f1tx(x) ( ( x * (x+1) ) / 2 )
 #define sum_fxty(x,y) ( ( ( ( y - x ) + 1 ) * ( x + y ) ) / 2 )
+#define fast_pow(x,y,m,ans) { ll cx=x; ll cy=y; ll res=1; cx=cx%m; while(cy>0){ if(cy&1){res*=cx;res%=m;} cy>>=1; cx*=cx; cx%=m; } ans=res; }
 
 // --------------- PARAMETERS -----------------
 #define MULTITEST 1 // 0 for single tests, 1 for multi-test
