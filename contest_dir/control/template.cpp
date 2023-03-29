@@ -30,9 +30,10 @@ vector < ll > sieve(ll N);
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
 // Check before submission these common mistakes:
-// - Make sure that where you used int the limit is no surpassed (search for * and +).
-// - Make sure you didn't mess up index 0 with index 1.
-// - Make sure you are not trying to go backward and use ++ instead of --
+// - Where you used int the limit is no surpassed (search for * and +).
+// - Didn't mess up index 0 with index 1.
+// - Not trying to go backward and use ++ instead of --
+// - Arrays with size >400K bytes should be global (for variable sizes use vectors; little bit of speed loss >> WA because of stack memory being so small)
 // - Read the whole code one more time. Reading should take < 1 min so you won't loose much rating.
 
 void doit(){
