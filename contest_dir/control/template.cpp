@@ -30,11 +30,12 @@ vector < ll > sieve(ll N);
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
 // Check before submission these common mistakes:
-// - Where you used int the limit is no surpassed (search for * and +).
+// - Where you used "int" the limit is no surpassed (search for * and +).
 // - Didn't mess up index 0 with index 1.
-// - Not trying to go backward and use ++ instead of --
+// - Not trying to go backward and use "++ instead of --"
+// - That you didn't have a case of "bitwise operations not nested" like ( a & b > 0 ). "NEST THE OPERATORS THAT YOU DON'T KNOW FOR CERTAIN"
 // - Arrays with size >400K bytes should be global (for variable sizes use vectors; little bit of speed loss >> WA because of stack memory being so small)
-// - Read the whole code one more time. Reading should take < 1 min so you won't loose much rating.
+// - Read the whole code one more time. Reading should take < 1 min so you won't loose much rating (for after C).
 
 void doit(){
 
