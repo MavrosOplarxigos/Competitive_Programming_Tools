@@ -9,9 +9,14 @@
 #define ALL(x) x.begin(),x.end()
 #define S(x) ((int)(x.size()))
 #define PB push_back
+// sum from 1 to x
 #define sum_f1tx(x) ( ( x * (x+1) ) / 2 )
+// sum from x to y 
 #define sum_fxty(x,y) ( ( ( ( y - x ) + 1 ) * ( x + y ) ) / 2 )
+// inline fast power iterative "ans" must be already declared variable
 #define fast_pow(x,y,m,ans) { ll cx=x; ll cy=y; ll res=1; cx=cx%m; while(cy>0){ if(cy&1){res*=cx;res%=m;} cy>>=1; cx*=cx; cx%=m; } ans=res; }
+// discriminant // for quadratic ax^2 + bx + c // > 0 (2 solutions), = 0 (1 solution), < 0 (complex solutions)
+#define discr(a,b,c) ( (b*b) - (4 * a * c) )
 
 // --------------- PARAMETERS -----------------
 #define MULTITEST 1 // 0 for single tests, 1 for multi-test
