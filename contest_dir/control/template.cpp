@@ -7,7 +7,7 @@
 #define repv(a,b,i) for(int i=a; i<=b; i++)
 #define mmod(a,b) ( (a >= 0) ? (a%b) : ( ( (b-1) * ( (-a) % b ) ) % b )  )
 #define ALL(x) x.begin(),x.end()
-#define S(x) ((int)(x.size()))
+#define S(x) ((long long)(x.size()))
 #define PB push_back
 // sum from 1 to x
 #define sum_f1tx(x) ( ( x * (x+1) ) / 2 )
