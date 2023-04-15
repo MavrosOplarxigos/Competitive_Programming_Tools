@@ -3,8 +3,8 @@
 #define ld long double
 #define apo(a,b) sqrtl( powl(a.x-b.x,2) + powl(a.y-b.y,2) )
 #define ldeq(a,b) ( fabsl(a - b) < 0.00000000007 ) // check long double rough equality 
-#define rep(a,b) for(int i=a; i<=b; i++)
-#define repv(a,b,i) for(int i=a; i<=b; i++)
+#define rep(a,b) for(long long i=a; i<=(long long)(b); i++)
+#define repv(a,b,i) for(long long i=a; i<=(long long)(b); i++)
 #define mmod(a,b) ( (a >= 0) ? (a%b) : ( ( (b-1) * ( (-a) % b ) ) % b )  )
 #define ALL(x) x.begin(),x.end()
 #define S(x) ((long long)(x.size()))
