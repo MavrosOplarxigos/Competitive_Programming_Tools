@@ -3,8 +3,6 @@
 #define ld long double
 #define apo(a,b) sqrtl( powl(a.x-b.x,2) + powl(a.y-b.y,2) )
 #define ldeq(a,b) ( fabsl(a - b) < 0.00000000007 ) // check long double rough equality 
-#define rep(a,b) for(long long i=a; i<=(long long)(b); i++)
-#define repv(a,b,i) for(long long i=a; i<=(long long)(b); i++)
 #define mmod(a,b) ( (a >= 0) ? (a%b) : ( ( (b-1) * ( (-a) % b ) ) % b )  )
 #define ALL(x) x.begin(),x.end()
 #define S(x) ((long long)(x.size()))
@@ -41,7 +39,9 @@ vector < ll > sieve(ll N);
 // - That you didn't have a case of "bitwise operations not nested" like ( a & b > 0 ). "NEST THE OPERATORS THAT YOU DON'T KNOW FOR CERTAIN"
 // - Arrays with size >400K bytes should be global (for variable sizes use vectors; little bit of speed loss >> WA because of stack memory being so small)
 // - Read the whole code one more time. Reading should take < 1 min so you won't loose much rating (for after C).
-
+// - We "don't use rep no more" to ensure that we use long longs in the cases where indexes take such large values.
+// - Make sure you "don't multiply two integers" without "casting them to long long first" 
+ 
 void doit(){
 
 	
