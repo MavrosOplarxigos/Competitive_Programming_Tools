@@ -16,6 +16,12 @@
 // discriminant // for quadratic ax^2 + bx + c // > 0 (2 solutions), = 0 (1 solution), < 0 (complex solutions)
 #define discr(a,b,c) ( (b*b) - (4 * a * c) )
 
+#ifndef ONLINE_JUDGE
+	#define debug( x ) { cout << "\033[0;31m";  { x } cout << "\033[1;37m";  }
+#else
+	#define debug( x ) 
+#endif
+
 // --------------- PARAMETERS -----------------
 #define MULTITEST 1 // 0 for single tests, 1 for multi-test
 //#define M_PI (2*acos(0))
