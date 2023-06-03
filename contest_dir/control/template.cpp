@@ -39,6 +39,9 @@ vector < ll > sieve(ll N);
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
 // Check before submission these common mistakes:
+// - That you "didn't confuse underlines in the example case with overlines in the instruction" that are meaning element inversion most propably.
+// - "NlogN" complexities should pass "as linear ones" do even if you use a DS like maps or pqueues.
+// - For trees remember that from leaf to root it can take O(n):" n/2 path to root and n/2 leafs -> O(n^2) complexity" to calculate on all these paths.
 // - Where you used "int" the limit is no surpassed (search for * and +).
 // - Didn't mess up index 0 with index 1.
 // - Not trying to go backward and use "++ instead of --"
