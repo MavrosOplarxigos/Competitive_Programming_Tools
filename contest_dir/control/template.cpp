@@ -39,17 +39,18 @@ vector < ll > sieve(ll N);
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
 // Check before submission these common mistakes:
+// - For N>4 there is alway a permutation with abs(p[i],p[i+1]) > 1 for all 1 <= i <= N.
+// - For integer X != 1 and P prime -> X * P is not prime because more than 1 prime factors.
 // - That you "didn't confuse underlines in the example case with overlines in the instruction" that are meaning element inversion most propably.
 // - "NlogN" complexities should pass "as linear ones" do even if you use a DS like maps or pqueues.
 // - For trees remember that from leaf to root it can take O(n):" n/2 path to root and n/2 leafs -> O(n^2) complexity" to calculate on all these paths.
-// - Where you used "int" the limit is no surpassed (search for * and +).
-// - Didn't mess up index 0 with index 1.
+// - Where you used int the type limit is no surpassed "(search for * and +)". Make sure you "don't multiply two integers" without "casting them to long long first".
+// - Didn't mess up "index 0 with index 1".
 // - Not trying to go backward and use "++ instead of --"
-// - That you didn't have a case of "bitwise operations not nested" like ( a & b > 0 ). "NEST THE OPERATORS THAT YOU DON'T KNOW FOR CERTAIN"
-// - Arrays with size >400K bytes should be global (for variable sizes use vectors; little bit of speed loss >> WA because of stack memory being so small)
-// - Read the whole code one more time. Reading should take < 1 min so you won't loose much rating (for after C).
-// - We "don't use rep no more" to ensure that we use long longs in the cases where indexes take such large values.
-// - Make sure you "don't multiply two integers" without "casting them to long long first" 
+// - That you didn't have a case of "bitwise operations not nested" like "( a & b > 0 )". NEST THE OPERATORS THAT YOU DON'T KNOW FOR CERTAIN.
+// - "Arrays with size >400K bytes should be global" (for variable sizes use vectors; little bit of speed loss >> WA because of stack memory being so small)
+// - "Read the whole code one more time." Reading should take < 1 min so you won't loose much rating "(for after C)".
+// - We "don't use rep no more" to ensure that we use "long longs in the cases where indexes take such large values".
  
 void doit(){
 
