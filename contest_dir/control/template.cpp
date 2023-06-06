@@ -15,6 +15,7 @@
 #define fast_pow(x,y,m,ans) { ll cx=x; ll cy=y; ll res=1; cx=cx%m; while(cy>0){ if(cy&1){res*=cx;res%=m;} cy>>=1; cx*=cx; cx%=m; } ans=res; }
 // discriminant // for quadratic ax^2 + bx + c // > 0 (2 solutions), = 0 (1 solution), < 0 (complex solutions)
 #define discr(a,b,c) ( (b*b) - (4 * a * c) )
+#define ord_pair(x,y) ( x < y ? make_pair(x,y) : make_pair(y,x) )
 
 #ifndef ONLINE_JUDGE
 	#define debug( x ) { cout << "\033[0;31m";  { x } cout << "\033[1;37m";  }
@@ -41,6 +42,8 @@ vector < ll > sieve(ll N);
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
 // Check before submission these common mistakes:
+// - When dealing with output for ordered "edge list" and you use "pairs" ensure the "pair of vertices is also ordered with ord_pair(x,y)"
+// - "Trailing zeroes of N!" just count the "powers of 5 that appear in 1..N". Log_5 time needed.
 // - To reveal the "extra prime factor powers" that a number X has compared to some number Y just do " X / __gcd(X,Y) "
 // - For a number X there "can" be "Y<X" such that for a "certain prime factor Y has a higher power" (e.g. X=6=2*3 and Y=4=2*2)
 // - For N>4 there is alway a permutation with abs(p[i],p[i+1]) > 1 for all 1 <= i <= N.
