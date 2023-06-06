@@ -2,20 +2,20 @@
 #define ll long long
 #define ld long double
 #define apo(a,b) sqrtl( powl(a.x-b.x,2) + powl(a.y-b.y,2) )
-#define ldeq(a,b) ( fabsl(a - b) < 0.00000000007 ) // check long double rough equality 
-#define mmod(a,b) ( (a >= 0) ? (a%b) : ( ( (b-1) * ( (-a) % b ) ) % b )  )
+#define ldeq(a,b) ( fabsl( (a) - (b) ) < 0.00000000007 ) // check long double rough equality 
+#define mmod(a,b) ( ( (a) >= 0) ? ( (a) % (b) ) : ( ( ( (b)-1 ) * ( (-(a)) % (b) ) ) % (b) ) )
 #define ALL(x) x.begin(),x.end()
 #define S(x) ((long long)(x.size()))
 #define PB push_back
 // sum from 1 to x
-#define sum_f1tx(x) ( ( x * (x+1) ) / 2 )
+#define sum_f1tx(x) ( ( (x) * ( (x) + 1 ) ) / 2 )
 // sum from x to y 
-#define sum_fxty(x,y) ( ( ( ( y - x ) + 1 ) * ( x + y ) ) / 2 )
+#define sum_fxty(x,y) ( ( ( ( (y) - (x) ) + 1 ) * ( (x) + (y) ) ) / 2 )
 // inline fast power iterative "ans" must be already declared variable
-#define fast_pow(x,y,m,ans) { ll cx=x; ll cy=y; ll res=1; cx=cx%m; while(cy>0){ if(cy&1){res*=cx;res%=m;} cy>>=1; cx*=cx; cx%=m; } ans=res; }
+#define fast_pow(x,y,m,ans) { ll cx=(x); ll cy=(y); ll res=1; cx=cx%(m); while(cy>0){ if(cy&1){res*=cx;res%=(m);} cy>>=1; cx*=cx; cx%=(m); } ans=res; }
 // discriminant // for quadratic ax^2 + bx + c // > 0 (2 solutions), = 0 (1 solution), < 0 (complex solutions)
-#define discr(a,b,c) ( (b*b) - (4 * a * c) )
-#define ord_pair(x,y) ( x < y ? make_pair(x,y) : make_pair(y,x) )
+#define discr(a,b,c) ( ( (b) * (b) ) - (4 * (a) * (c) ) )
+#define ord_pair(x,y) ( (x) < (y) ? make_pair((x),(y)) : make_pair((y),(x)) )
 
 #ifndef ONLINE_JUDGE
 	#define debug( x ) { cout << "\033[0;31m";  { x } cout << "\033[1;37m";  }
