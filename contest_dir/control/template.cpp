@@ -42,6 +42,7 @@ vector < ll > sieve(ll N);
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
 // Check before submission these common mistakes:
+// - After solving problem A. For the love of "GOD". Simply open "COMPLETE PROBLEMSET" on the "CORRECT DIVISION".
 // - When dealing with output for ordered "edge list" and you use "pairs" ensure the "pair of vertices is also ordered with ord_pair(x,y)"
 // - "Trailing zeroes of N!" just count the "powers of 5 that appear in 1..N". Log_5 time needed.
 // - To reveal the "extra prime factor powers" that a number X has compared to some number Y just do " X / __gcd(X,Y) "
