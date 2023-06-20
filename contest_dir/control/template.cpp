@@ -41,14 +41,15 @@ vector < ll > sieve(ll N);
 
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
-// Check before submission these common mistakes:
+// READ THIS BEFORE EVERY CONTEST:
+// - If you get stuck in a problem where we are searching for the minimal/maximal valid solution to something, approach with: If I binary search the answer "how much time complexity will it take to calculate if the candidate answer gives a valid solution". Then you simply multiply that complexity with the logarithm of the greatest number the solution can have.
 // - After solving problem A. For the love of "GOD". Simply open "COMPLETE PROBLEMSET" on the "CORRECT DIVISION".
 // - When dealing with output for ordered "edge list" and you use "pairs" ensure the "pair of vertices is also ordered with ord_pair(x,y)"
 // - "Trailing zeroes of N!" just count the "powers of 5 that appear in 1..N". Log_5 time needed.
 // - To reveal the "extra prime factor powers" that a number X has compared to some number Y just do " X / __gcd(X,Y) "
 // - For a number X there "can" be "Y<X" such that for a "certain prime factor Y has a higher power" (e.g. X=6=2*3 and Y=4=2*2)
-// - For N>4 there is alway a permutation with abs(p[i],p[i+1]) > 1 for all 1 <= i <= N.
-// - For integer X != 1 and P prime -> X * P is not prime because more than 1 prime factors.
+// - For N>4 there is alway a permutation with abs(p[i],p[i+1]) > 1 for all 1 <= i < N.
+// - For integer X != 1 and P prime -> X * P is not prime because more than 1 factors.
 // - That you "didn't confuse underlines in the example case with overlines in the instruction" that are meaning element inversion most propably.
 // - "NlogN" complexities should pass "as linear ones" do even if you use a DS like maps or pqueues.
 // - For trees remember that from leaf to root it can take O(n):" n/2 path to root and n/2 leafs -> O(n^2) complexity" to calculate on all these paths.
@@ -58,7 +59,7 @@ vector < ll > sieve(ll N);
 // - That you didn't have a case of "bitwise operations not nested" like "( a & b > 0 )". NEST THE OPERATORS THAT YOU DON'T KNOW FOR CERTAIN.
 // - "Arrays with size >400K bytes should be global" (for variable sizes use vectors; little bit of speed loss >> WA because of stack memory being so small)
 // - "Read the whole code one more time." Reading should take < 1 min so you won't loose much rating "(for after C)".
-// - We "don't use rep no more" to ensure that we use "long longs in the cases where indexes take such large values". 
+// - We "don't use rep no more" to ensure that we use "long longs in the cases where indexes take such large values". For example maybe we have a sorted array of the indexes of some coneptual array. 
 
 void doit(){
 
