@@ -7,6 +7,12 @@
 #define ALL(x) x.begin(),x.end()
 #define S(x) ((long long)(x.size()))
 #define PB push_back
+#define pii pair < int , int >
+#define pil pair < int , ll >
+#define pli pair < ll , int >
+#define pll pair < ll , ll >
+// for the min_heap we should either use one-word declared data type (int, char, long, name of struct) or define it to be a single word
+#define min_heap(x) priority_queue < x , vector < x > , greater < x > >
 // sum from 1 to x
 #define sum_f1tx(x) ( ( (x) * ( (x) + 1 ) ) / 2 )
 // sum from x to y 
