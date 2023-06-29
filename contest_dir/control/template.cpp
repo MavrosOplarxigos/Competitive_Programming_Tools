@@ -54,7 +54,7 @@ vector < ll > sieve(ll N);
 // - "Trailing zeroes of N!" just count the "powers of 5 that appear in 1..N". Log_5 time needed.
 // - To reveal the "extra prime factor powers" that a number X has compared to some number Y just do " X / __gcd(X,Y) "
 // - For a number X there "can" be "Y<X" such that for a "certain prime factor Y has a higher power" (e.g. X=6=2*3 and Y=4=2*2)
-// - For N>4 there is alway a permutation with abs(p[i],p[i+1]) > 1 for all 1 <= i < N.
+// - For N>4 there is always a permutation with abs(p[i] - p[i+1]) > 1 for all 1 <= i < N.
 // - For integer X != 1 and P prime -> X * P is not prime because more than 1 factors.
 // - That you "didn't confuse underlines in the example case with overlines in the instruction" that are meaning element inversion most propably.
 // - "NlogN" complexities should pass "as linear ones" do even if you use a DS like maps or pqueues.
