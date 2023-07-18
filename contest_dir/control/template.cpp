@@ -11,6 +11,8 @@
 #define pil pair < int , ll >
 #define pli pair < ll , int >
 #define pll pair < ll , ll >
+// we want to check if a * b > LONG_MAX -> b > LONG_MAX / a 
+#define is_oflow(a,b) ( (a!=0) && ( abs(b) > LONG_LONG_MAX / abs(a) ) )
 // for the min_heap we should either use one-word declared data type (int, char, long, name of struct) or define it to be a single word
 #define min_heap(x) priority_queue < x , vector < x > , greater < x > >
 // sum from 1 to x
