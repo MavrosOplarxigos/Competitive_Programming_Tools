@@ -49,7 +49,8 @@ vector < ll > sieve(ll N);
 
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
-// READ THIS BEFORE EVERY CONTEST:
+// READ THIS BEFORE EVERY CONTEST -> WINNING = NOT REPEATING THE SAME MISTAKES:
+// - If you find a "solution for a problem that uses segment trees" first check if there is a solution using "PQs or whatever else DOESN'T REQUIRE RECURSION". If you can't, use "g++20" instead.
 // - If you get stuck in a problem where we are searching for the minimal/maximal valid solution to something, approach with: If I binary search the answer "how much time complexity will it take to calculate if the candidate answer gives a valid solution". Then you simply multiply that complexity with the logarithm of the size of the set of possible solutions.
 // - After solving problem A. For the love of "GOD". Simply open "COMPLETE PROBLEMSET" on the "CORRECT DIVISION".
 // - When dealing with output for ordered "edge list" and you use "pairs" ensure the "pair of vertices is also ordered with ord_pair(x,y)"
@@ -59,7 +60,7 @@ vector < ll > sieve(ll N);
 // - For N>4 there is always a permutation with abs(p[i] - p[i+1]) > 1 for all 1 <= i < N.
 // - For integer X != 1 and P prime -> X * P is not prime because more than 1 factors.
 // - That you "didn't confuse underlines in the example case with overlines in the instruction" that are meaning element inversion most propably.
-// - "NlogN" complexities should pass "as linear ones" do even if you use a DS like maps or pqueues.
+// - "NlogN" complexities should pass "as linear ones" do even if you use a DS like maps or pqueues "UNLESS YOU HAVE RECURSION - BE CAREFUL!".
 // - For trees remember that from leaf to root it can take O(n):" n/2 path to root and n/2 leafs -> O(n^2) complexity" to calculate on all these paths.
 // - Where you used int the type limit is no surpassed "(search for * and +)". Make sure you "don't multiply two integers" without "casting them to long long first".
 // - Didn't mess up "index 0 with index 1".
