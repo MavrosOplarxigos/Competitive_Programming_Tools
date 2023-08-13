@@ -24,6 +24,7 @@
 // discriminant // for quadratic ax^2 + bx + c // > 0 (2 solutions), = 0 (1 solution), < 0 (complex solutions)
 #define discr(a,b,c) ( ( (b) * (b) ) - (4 * (a) * (c) ) )
 #define ord_pair(x,y) ( (x) < (y) ? make_pair((x),(y)) : make_pair((y),(x)) )
+#define endl '\n'
 
 #ifndef ONLINE_JUDGE
 	#define debug( x ) { cout << "\033[0;31m";  { x } cout << "\033[1;37m";  }
