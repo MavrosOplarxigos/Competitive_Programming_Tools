@@ -24,7 +24,7 @@
 // discriminant // for quadratic ax^2 + bx + c // > 0 (2 solutions), = 0 (1 solution), < 0 (complex solutions)
 #define discr(a,b,c) ( ( (b) * (b) ) - (4 * (a) * (c) ) )
 #define ord_pair(x,y) ( (x) < (y) ? make_pair((x),(y)) : make_pair((y),(x)) )
-#define endl '\n'
+#define endol '\n'
 
 #ifndef ONLINE_JUDGE
 	#define debug( x ) { cout << "\033[0;31m";  { x } cout << "\033[1;37m";  }
@@ -51,6 +51,7 @@ vector < ll > sieve(ll N);
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
 // READ THIS BEFORE EVERY CONTEST -> WINNING = NOT REPEATING THE SAME MISTAKES:
+// - Fast IO is already included in this template.
 // - If you find a "solution for a problem that uses segment trees" first check if there is a solution using "PQs or whatever else DOESN'T REQUIRE RECURSION". If you can't, use "g++20" instead.
 // - If you get stuck in a problem where we are searching for the minimal/maximal valid solution to something, approach with: If I binary search the answer "how much time complexity will it take to calculate if the candidate answer gives a valid solution". Then you simply multiply that complexity with the logarithm of the size of the set of possible solutions.
 // - After solving problem A. For the love of "GOD". Simply open "COMPLETE PROBLEMSET" on the "CORRECT DIVISION".
