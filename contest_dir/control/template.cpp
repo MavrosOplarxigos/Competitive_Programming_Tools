@@ -44,7 +44,7 @@
 using namespace std;
 
 // ----------------- CUSTOM FUNCTION DECLARATIONS -----------------
-bool is_not_prime[MAXSIEVE]; 
+bool is_not_prime[MAXSIEVE+1]; 
 vector < ll > primes;
 vector < ll > sieve(ll N);
 
