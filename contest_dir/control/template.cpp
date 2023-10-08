@@ -51,6 +51,7 @@ vector < ll > sieve(ll N);
 // >>>>>>>>>>>>>>>>>> SOLUTION BEGIN <<<<<<<<<<<<<<<<<<<<<
 
 // READ THIS BEFORE EVERY CONTEST -> WINNING = NOT REPEATING THE SAME MISTAKES:
+// - For the "LOVE OF GOD" do "NOT name functions" that you write with "NAMES THAT DIFFER FROM BUILT-IN FUNCTION NAMES OR OTHER FUNCTION NAMES BY JUST A SINGLE CHARACTER". How many times do I have to tell you?
 // - Fast IO is already included in this template.
 // - If you find a "solution for a problem that uses segment trees" first check if there is a solution using "PQs or whatever else DOESN'T REQUIRE RECURSION". If you can't, use "g++20" instead.
 // - If you get stuck in a problem where we are searching for the minimal/maximal valid solution to something, approach with: If I binary search the answer "how much time complexity will it take to calculate if the candidate answer gives a valid solution". Then you simply multiply that complexity with the logarithm of the size of the set of possible solutions.
